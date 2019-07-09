@@ -1,6 +1,6 @@
 # Multiple Package Manager (MPM)
 
-######An open-source library to manage multiple packages.
+###### An open-source library to manage multiple packages.
 `mpm` enable you to clone, install, sync, build your packages in a multi-package / component solution.
 It is perfect to be used as a dev tool in a micro-services environment. 
 Instead of cloning multiple repositories / packages, navigating to each one, installing it, building,
@@ -9,14 +9,14 @@ you can use simple `mpm install`, `mpm start` commands to install all your packa
 The library if fully customizable and gives you **full control** via the `multi-package.json` file. 
 There you define the packages, their scripts and more. 
 
-###Platforms
+### Platforms
 Currenly supported only for Mac OS and Linux. You are welcomed to contribute more support ;)
 
-###Installation
+### Installation
 
 `npm install -g mpm`
 
-###Usage
+### Usage
 
 1. Initiate an mpm project
     ```
@@ -39,7 +39,7 @@ Currenly supported only for Mac OS and Linux. You are welcomed to contribute mor
     ```
 6. Add whichever commands and scripts you would like.
 
-####The `mutli-package.json` file:
+#### The `mutli-package.json` file:
 The `multi-package.json` file holds the packages configuration for the different scripts.
 
 ```
