@@ -1,0 +1,26 @@
+{
+  "name": "mpm",
+  "version": "1.0.0",
+  "description": "Multiple Package Manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "node index.js",
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Doron Oded",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figlet": "^1.2.1",
+    "minimist": "^1.2.0",
+    "ordinal": "^1.0.3",
+    "promptly": "^3.0.3",
+    "ttab": "^0.6.1"
+  },
+  "bin": {
+    "mpm": "./index.js"
+  }
+}
