@@ -1,4 +1,4 @@
-# Multiple Package Manager (MPM)
+# **M**ultiple node **P**ackage **M**anager (MPM)
 
 ###### An open-source library to manage multiple packages.
 `mpm` enable you to clone, install, sync, build your packages in a multi-package / component solution.
@@ -14,7 +14,7 @@ Currenly supported only for Mac OS and Linux. You are welcomed to contribute mor
 
 ### Installation
 
-`npm install -g mpm`
+`npm install -g multi-npm`
 
 ### Usage
 
