@@ -1,6 +1,6 @@
 {
   "name": "multi-npm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Multiple node Package Manager (mpm)",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "postinstall": "node index.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/doronoded/mpm.git"
   },
   "author": "Doron Oded",
   "license": "MIT",
@@ -22,5 +23,16 @@
   },
   "bin": {
     "mpm": "./index.js"
-  }
+  },
+  "keywords": [
+    "npm",
+    "multiple",
+    "package",
+    "repository",
+    "manager",
+    "dev",
+    "micro",
+    "services"
+  ]
+
 }
