@@ -9,8 +9,10 @@ you can use simple `mpm install`, `mpm start` commands to install all your packa
 The library if fully customizable and gives you **full control** via the `multi-package.json` file. 
 There you define the packages, their scripts and more. 
 
+![mpm in action](assets/mpm.gif)
+
 ### Platforms
-Currenly supported only for Mac OS and Linux. You are welcomed to contribute more support ;)
+Currenly supported only for Mac OS. You are welcomed to contribute more support ;)
 
 ### Installation
 
