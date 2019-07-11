@@ -7,6 +7,7 @@ const figlet = require("figlet");
 const fs = require ("fs");
 const minimist = require ("minimist");
 const runPackageScript = require ("./lib/runPackageScript.js");
+const runCommandSync = require ("./lib/runCommandSync.js");
 var params = minimist(process.argv.slice(2));
 var multiPackage = {};
 try {
@@ -83,6 +84,15 @@ function run () {
     }
     else if (mainCommand in internalCommands){
         internalCommands[mainCommand].run(multiPackage, params);
+    }
+    else if (mainCommand in multiPackage.scripts) {
+        console.log (chalk.green(`Running custom command: '${chalk.bold(mainCommand)}'`));
+        try {
+            runCommandSync(multiPackage.scripts[mainCommand]);
+        }
+        catch (ex) {
+            console.error (`Error running script '${mainCommand}': ${ex}`);
+        }
     }
     else if (packagesScripts.has (mainCommand) || Object.keys(npm.commands).includes(mainCommand)) {
         runPackageScript (mainCommand, multiPackage);
