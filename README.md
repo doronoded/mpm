@@ -12,7 +12,7 @@ There you define the packages, their scripts and more.
 ![mpm in action](assets/mpm.gif)
 
 ### Platforms
-Currenly supported only for Mac OS. You are welcomed to contribute more support ;)
+Currenly supported only for Mac OS and Linux. You are welcomed to contribute more support ;)
 
 ### Installation
 
