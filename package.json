@@ -4,6 +4,7 @@
   "description": "Multiple node Package Manager (mpm)",
   "main": "index.js",
   "scripts": {
+    "preinstall": "node ./lib/preInstall.js",
     "start": "node index.js",
     "postinstall": "node index.js"
   },
