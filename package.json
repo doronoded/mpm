@@ -1,6 +1,6 @@
 {
   "name": "multi-npm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Multiple node Package Manager (mpm)",
   "main": "index.js",
   "scripts": {
