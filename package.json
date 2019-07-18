@@ -1,10 +1,9 @@
 {
   "name": "multi-npm",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "Multiple node Package Manager (mpm)",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node ./lib/preInstall.js",
     "start": "node index.js",
     "postinstall": "node index.js"
   },
@@ -19,7 +18,9 @@
     "figlet": "^1.2.1",
     "minimist": "^1.2.0",
     "ordinal": "^1.0.3",
-    "promptly": "^3.0.3",
+    "promptly": "^3.0.3"
+  },
+  "optionalDependencies": {
     "ttab": "^0.6.1"
   },
   "bin": {
@@ -35,5 +36,4 @@
     "micro",
     "services"
   ]
-
 }

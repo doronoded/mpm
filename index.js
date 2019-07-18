@@ -54,10 +54,6 @@ function loadCustomCommands() {
     packagesScripts = new Set (packagesScriptsArray);
 
     packagesScripts.forEach (packageScript => {
-        if (Object.keys (internalCommands).includes(packageScript)){
-            console.warn (chalk.yellow(`[WARN] The script ${packageScript} found in packages will be ignored because the script name is reserved. Please choose a different name`));
-        }
-
         if (multiPackage.scripts && Object.keys (multiPackage.scripts).includes (packageScript) ) {
             console.warn (chalk.yellow(`[WARN] The script ${packageScript} found in packages will be ignored because the script name is already in use in the global custom scripts. Please choose a different name`));
         }
